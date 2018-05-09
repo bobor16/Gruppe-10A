@@ -1,4 +1,4 @@
-package javaapplication26;
+package gse01;
 public class gseLogic {
     private ProduktBeskrivelse mango;
     private int tempAntal;
