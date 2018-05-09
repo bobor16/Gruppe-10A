@@ -2,7 +2,11 @@ package gse01;
 
 import java.util.*;
 
-public class basket {
+public class Basket extends Product {
 
-    HashMap<String, Integer> kurv1 = new HashMap();
+    HashMap<String, Integer> kurv = new HashMap();
+
+    public void Basket() {
+        kurv.put(a, Integer.SIZE);
+    }
 }

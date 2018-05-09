@@ -14,11 +14,16 @@ public class Product {
     }
 
     public String commands() {
+        Basket b = new Basket();
         System.out.println("How many mango's");
         while (!"q".equalsIgnoreCase(a = input.next())) {
             antal1 = a;
             System.out.println("Processed, press q to quit and see basket");
         }
+        if("a".equalsIgnoreCase(a = input.next())) {
+            b.Basket();
+        }
+            
 
         if ("q".equals(a)) {
             System.out.println("done");

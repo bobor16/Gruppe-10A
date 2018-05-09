@@ -30,8 +30,8 @@ public class gseLogic {
         System.out.println("stock left: " + mango.getWarehouseQuantity());
         System.out.println("total price: " + tempPris + " kr");
 
-        k1.kurv1.put(mango.getProductID(), (Integer.parseInt(p1.antal1)));
-        System.out.println("id & quantity: " + k1.kurv1.toString());
+        k1.kurv.put(mango.getProductID(), (Integer.parseInt(p1.antal1)));
+        System.out.println("id & quantity: " + k1.kurv.toString());
     }
     
     public void printBasket(ProduktDescription mango) {
