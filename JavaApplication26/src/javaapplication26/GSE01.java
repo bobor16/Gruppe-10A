@@ -1,4 +1,4 @@
-package gse01;
+package javaapplication26;
 public class GSE01 {
     public static void main(String[] args) {
        GSE01 platform1 = new GSE01();

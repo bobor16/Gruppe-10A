@@ -1,5 +1,5 @@
 
-package gse01;
+package javaapplication26;
 import java.util.Scanner;
 public class Produkt {
     String antal1;
@@ -12,7 +12,7 @@ public class Produkt {
         System.out.println("Hvor mange mangoer");
         while (!"q".equals(a = input.next())) {
             antal1 = a;
-            System.out.println("registreret");
+            System.out.println("validatet, press q to quit");
             
         }if("q".equals(a)){
                   System.out.println("done");

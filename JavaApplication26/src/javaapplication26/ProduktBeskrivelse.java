@@ -1,4 +1,4 @@
-package gse01;
+package javaapplication26;
 public class ProduktBeskrivelse {
     private String produktID;
     private String beskrivelse;
