@@ -12,7 +12,7 @@ public class ProduktBeskrivelse {
         this.produktID = produktID;
     }
 
-    public String faaProduktID() {
+    public String getProduktID() {
         return produktID;
     }
 
@@ -20,7 +20,7 @@ public class ProduktBeskrivelse {
         this.beskrivelse = beskrivelse;
     }
 
-    public String faaProduktBeskrivelse() {
+    public String getProduktBeskrivelse() {
         return beskrivelse;
     }
 
@@ -28,7 +28,7 @@ public class ProduktBeskrivelse {
         this.pris = pris;
     }
 
-    public double faaPris() {
+    public double getPris() {
         return pris;
     }
 
@@ -36,7 +36,7 @@ public class ProduktBeskrivelse {
         this.standardmeangde = meangde;
     }
 
-    public double faaMeangde() {
+    public double getStandartMeangde() {
         return standardmeangde;
     }
 
@@ -44,7 +44,7 @@ public class ProduktBeskrivelse {
         this.antalPaaLager = antal;
     }
 
-    public int faaLagerAntal() {
+    public int getLagerAntal() {
         return antalPaaLager;
     }
 }

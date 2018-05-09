@@ -7,6 +7,7 @@ public class Produkt {
     String antal1;
     String a;
     Scanner input = new Scanner(System.in);
+    gseLogic logic = new gseLogic();
 
     public void go() {
         commands();
@@ -14,13 +15,14 @@ public class Produkt {
 
     public String commands() {
         System.out.println("Hvor mange mangoer");
-        while (!"q".equals(a = input.next())) {
+        while (!"q".equalsIgnoreCase(a = input.next())) {
             antal1 = a;
             System.out.println("validatet, press q to quit");
-
         }
+
         if ("q".equals(a)) {
             System.out.println("done");
+
         }
         return antal1;
     }

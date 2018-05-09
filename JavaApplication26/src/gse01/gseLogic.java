@@ -5,7 +5,6 @@ public class gseLogic {
     private ProduktBeskrivelse mango;
     private int tempAntal;
     private double tempPris;
-
     public void start() {
         Produkt p1 = new Produkt();
         Kurv k1 = new Kurv();
@@ -17,20 +16,30 @@ public class gseLogic {
         mango.setLagerAntal(150);
         mango.setStandardmeangde(8);
 
-        mango.faaProduktID();
-        mango.faaProduktBeskrivelse();
-        mango.faaPris();
-        mango.faaMeangde();
-        mango.faaLagerAntal();
+        mango.getProduktID();
+        mango.getProduktBeskrivelse();
+        mango.getPris();
+        mango.getStandartMeangde();
+        mango.getLagerAntal();
         p1.go();
+        printBasket(mango);
 
-        tempAntal = (mango.faaLagerAntal()) - (Integer.parseInt(p1.antal1));
+        tempAntal = (mango.getLagerAntal()) - (Integer.parseInt(p1.antal1));
         mango.setLagerAntal(tempAntal);
-        tempPris = ((mango.faaPris()) * (Integer.parseInt(p1.antal1)));
-        System.out.println("stock left: " + mango.faaLagerAntal());
-        System.out.println("total price: " + tempPris);
+        tempPris = ((mango.getPris()) * (Integer.parseInt(p1.antal1)));
+        System.out.println("stock left: " + mango.getLagerAntal());
+        System.out.println("total price: " + tempPris + " kr");
 
-        k1.kurv1.put(mango.faaProduktID(), (Integer.parseInt(p1.antal1)));
+        k1.kurv1.put(mango.getProduktID(), (Integer.parseInt(p1.antal1)));
         System.out.println("id & quantity: " + k1.kurv1.toString());
+    }
+    
+    public void printBasket(ProduktBeskrivelse mango) {
+        System.out.println("Current inventory quantity and description is: ");
+//        mango.faaLagerAntal();
+//        mango.faaMeangde();
+//        mango.faaPris();
+//        mango.faaProduktBeskrivelse();
+//        mango.faaProduktID();
     }
 }
