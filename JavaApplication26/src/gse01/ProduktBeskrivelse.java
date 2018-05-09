@@ -1,38 +1,50 @@
-package javaapplication26;
+package gse01;
+
 public class ProduktBeskrivelse {
+
     private String produktID;
     private String beskrivelse;
     private double pris;
     private int standardmeangde;
     private int antalPaaLager;
-    public void setProduktID(String produktID){
+
+    public void setProduktID(String produktID) {
         this.produktID = produktID;
     }
-    public String faaProduktID(){
-         return produktID;  
+
+    public String faaProduktID() {
+        return produktID;
     }
-    public void setProduktBeskrivels(String beskrivelse){ 
-        this.beskrivelse = beskrivelse;   
+
+    public void setProduktBeskrivels(String beskrivelse) {
+        this.beskrivelse = beskrivelse;
     }
-    public String faaProduktBeskrivelse(){
+
+    public String faaProduktBeskrivelse() {
         return beskrivelse;
     }
-    public void setPris(double pris){
+
+    public void setPris(double pris) {
         this.pris = pris;
     }
-    public double faaPris(){
+
+    public double faaPris() {
         return pris;
     }
-    public void setStandardmeangde(int meangde){
+
+    public void setStandardmeangde(int meangde) {
         this.standardmeangde = meangde;
     }
-    public double faaMeangde(){
+
+    public double faaMeangde() {
         return standardmeangde;
     }
-    public void setLagerAntal(int antal){
+
+    public void setLagerAntal(int antal) {
         this.antalPaaLager = antal;
     }
-    public int faaLagerAntal(){
+
+    public int faaLagerAntal() {
         return antalPaaLager;
     }
 }
